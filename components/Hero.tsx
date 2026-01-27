@@ -95,7 +95,7 @@ const Hero: React.FC = () => {
         >
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#faf9f6] to-transparent z-10"></div>
           <img
-            src="./media/images/hero_portrait.png"
+            src="/media/Images/hero_portrait.png"
             alt="Khyati Raval"
             className="w-full h-full object-cover object-[center_top]"
           />
