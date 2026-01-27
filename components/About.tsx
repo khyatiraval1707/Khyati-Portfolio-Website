@@ -5,7 +5,7 @@ import { PERSONAL_INFO } from '../constants';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 md:py-32 scroll-mt-32">
+    <section id="about" className="py-12 md:py-16 scroll-mt-32">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
         <div className="lg:col-span-5">
           <motion.h2
@@ -33,11 +33,11 @@ const About: React.FC = () => {
             </p>
             <div className="grid grid-cols-2 gap-8 pt-8">
               <div>
-                <h4 className="text-stone-900 font-semibold text-3xl">4+</h4>
+                <h4 className="text-black hover:text-[#C05621] transition-colors font-semibold text-3xl">4+</h4>
                 <p className="text-sm text-stone-500 uppercase tracking-widest mt-1">Years Experience</p>
               </div>
               <div>
-                <h4 className="text-stone-900 font-semibold text-3xl">IT</h4>
+                <h4 className="text-black hover:text-[#C05621] transition-colors font-semibold text-3xl">IT</h4>
                 <p className="text-sm text-stone-500 uppercase tracking-widest mt-1">Industry Focus</p>
               </div>
             </div>

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { PERSONAL_INFO } from '../constants';
+import { Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -12,8 +13,8 @@ const Footer: React.FC = () => {
           &copy; {currentYear} {PERSONAL_INFO.name.toUpperCase()}
         </div>
 
-        <div className="flex space-x-8">
-          <a href={PERSONAL_INFO.linkedin} target="_blank" rel="noopener noreferrer" className="text-sm text-stone-400 hover:text-stone-900 transition-colors">LinkedIn</a>
+        <div className="flex space-x-8 w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-all">
+          <a href={PERSONAL_INFO.linkedin} target="_blank" rel="noopener noreferrer" className="text-sm text-stone-400 hover:text-stone-900 transition-colors"><Linkedin className="w-5 h-5" /></a>
         </div>
 
         <div className="text-xs text-stone-300">

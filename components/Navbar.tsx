@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Linkedin } from 'lucide-react';
 import { PERSONAL_INFO } from '../constants';
 
 const Navbar: React.FC = () => {
@@ -21,8 +21,7 @@ const Navbar: React.FC = () => {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
-    { name: 'Initiatives', href: '#initiatives' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Initiatives', href: '#initiatives' }
   ];
 
   return (
@@ -61,14 +60,26 @@ const Navbar: React.FC = () => {
               )}
             </div>
           ))}
-          <div className="pl-4">
+          <div className="pl-4 flex items-center space-x-3">
             <motion.a
-              href={`mailto:${PERSONAL_INFO.email}`}
+              href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-2.5 bg-stone-900 text-white text-[13px] font-bold rounded-full shadow-lg shadow-stone-200"
+              className="px-6 py-2.5 bg-stone-900 text-white text-[13px] font-bold rounded-full shadow-lg shadow-stone-200 hover:bg-[#C05621] transition-colors"
             >
-              Get in Touch
+              Contact
+            </motion.a>
+
+            <motion.a
+              href={PERSONAL_INFO.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="p-2.5 bg-stone-100 text-stone-900 rounded-full hover:bg-[#C05621] hover:text-white transition-colors"
+              title="LinkedIn"
+            >
+              <Linkedin size={20} />
             </motion.a>
           </div>
         </div>
@@ -101,13 +112,25 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            <a
-              href={`mailto:${PERSONAL_INFO.email}`}
-              className="text-center px-6 py-4 bg-stone-900 text-white rounded-2xl font-bold"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Start a Conversation
-            </a>
+            <div className="flex flex-col space-y-4">
+              <a
+                href="#contact"
+                className="text-center px-6 py-4 bg-stone-900 text-white rounded-2xl font-bold hover:bg-[#C05621] transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact
+              </a>
+              <a
+                href={PERSONAL_INFO.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center space-x-2 text-center px-6 py-4 bg-[#0077b5]/10 text-[#0077b5] rounded-2xl font-bold hover:bg-[#C05621] hover:text-white transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <Linkedin size={20} />
+                <span>LinkdIn</span>
+              </a>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 sm:px-12 pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-6 sm:px-12 pt-10 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full z-10 grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
         {/* Left Column: Text Content */}
         <motion.div
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
         >
           <motion.div variants={item} className="flex items-center space-x-3">
             <span className="w-12 h-[1px] bg-stone-400"></span>
-            <span className="text-stone-500 font-medium tracking-[0.3em] text-[10px] uppercase">
+            <span className="text-stone-500 font-medium tracking-[0.3em] text-[12px] uppercase hover:text-[#C05621] transition-colors">
               Human Resources Executive
             </span>
           </motion.div>
@@ -51,13 +51,13 @@ const Hero: React.FC = () => {
               className="text-6xl md:text-8xl lg:text-9xl font-outfit font-bold tracking-tight leading-[0.9] text-stone-900"
             >
               Khyati <br />
-              <span className="text-stone-300 italic font-serif font-light">Raval</span>
+              <span className="text-[#b1b1b1ff] italic font-serif font-light hover:text-[#C05621] transition-colors">Raval</span>
             </motion.h1>
           </div>
 
           <motion.div variants={item} className="max-w-2xl mt-12">
             <p className="text-xl md:text-2xl text-stone-600 leading-relaxed font-light">
-              Designing workplace cultures where <span className="text-stone-900 font-medium">talent meets opportunity</span>. With 4 years of strategic HR experience, I build teams that drive lasting success.
+              Designing workplace cultures where <span className="text-stone-900 font-medium hover:text-[#C05621] transition-colors">talent meets opportunity</span>. With 4 years of strategic HR experience, I build teams that drive lasting success.
             </p>
           </motion.div>
 
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-10 py-5 bg-stone-900 text-white rounded-full font-semibold transition-all shadow-xl hover:shadow-2xl flex items-center group"
+              className="px-10 py-5 bg-stone-900 text-white rounded-full font-semibold transition-all shadow-xl hover:shadow-2xl hover:bg-[#C05621] flex items-center group"
             >
               Start a Conversation
               <motion.span
@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
             </motion.a>
             <motion.a
               href="#experience"
-              className="text-stone-500 hover:text-stone-900 font-medium transition-colors flex items-center"
+              className="text-stone-500 hover:text-[#C05621] font-medium transition-colors flex items-center"
             >
               Explore my journey
             </motion.a>

@@ -86,36 +86,36 @@ export const INITIATIVES: Initiative[] = [
     title: "Culture Architecture",
     description: "Designing workplaces that are rewarded through structured engagement programs.",
     tag: "Workplace Culture",
-    icon: <Heart className="w-8 h-8 text-stone-900" />
+    icon: <Heart className="w-6 h-6 text-stone-900" />
   },
   {
     title: "Strategic Talent Sourcing",
     description: "Building robust talent pipelines for technical roles using diverse channels and data-driven screening.",
     tag: "Recruitment",
-    icon: <Users className="w-8 h-8 text-stone-900" />
+    icon: <Users className="w-6 h-6 text-stone-900" />
   },
   {
     title: "Performance Optimization",
     description: "Developing transparent appraisal systems that align individual growth with organizational objectives.",
     tag: "Growth",
-    icon: <Target className="w-8 h-8 text-stone-900" />
+    icon: <Target className="w-6 h-6 text-stone-900" />
   }
 ];
 
 export const SERVICES = [
   {
     title: "Talent Acquisition",
-    description: "End-to-end recruitment strategies for finding the best fit for your organization.",
-    icon: <Search className="w-6 h-6" />
+    description: "End-to-end recruitment strategies for finding the best fit candidates.",
+    icon: <Search className="w-6 h-6 text-stone-900" />
   },
   {
     title: "Employee Engagement",
     description: "Creating meaningful connections and high-performing workplace cultures.",
-    icon: <Users className="w-6 h-6" />
+    icon: <Award className="w-6 h-6 text-stone-900" />
   },
   {
     title: "Policy & Operations",
     description: "Streamlining HR processes from payroll to performance management.",
-    icon: <Target className="w-6 h-6" />
+    icon: <Briefcase className="w-6 h-6 text-stone-900" />
   }
 ];
