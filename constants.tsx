@@ -15,9 +15,23 @@ export const PERSONAL_INFO = {
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
+    company: "Metaqualt",
+    role: "Lead HR & Business Development Executive",
+    period: "May 2025 - Present",
+    location: "Ahmedabad, Gujarat, India",
+    achievements: [
+      "Lead the comprehensive HR function, driving strategies for talent acquisition and cultivating an inclusive organizational culture",
+      "Spearhead recruitment for high-tech roles in AI/ML, Blockchain, Flutter, and Fullstack, with a strategic focus on AI innovation",
+      "Manage entire payroll operations, leave policies, and company policy creation",
+      "Orchestrate seamless onboarding for new hires and draft all essential organizational documentation",
+      "Drive business development initiatives to support organizational growth strategies",
+      "Negotiate compensation packages and offers, ensuring competitive talent acquisition"
+    ]
+  },
+  {
     company: "Ampli5 Digital Pvt. Ltd.",
-    role: "Human Resources Executive",
-    period: "January 2025 - Present",
+    role: "Senior HR Executive",
+    period: "August 2024 - April 2025",
     location: "Ahmedabad, Gujarat, India",
     achievements: [
       "Develop HR strategies and align them with organizational goals",
@@ -31,8 +45,8 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     company: "Stepica Solution",
-    role: "Freelance HR Recruiter",
-    period: "October 2023 - December 2024",
+    role: "Talent Acquisition Specialist",
+    period: "June 2023 - July 2024",
     location: "Remote / Ahmedabad",
     achievements: [
       "Managed end-to-end recruitment cycles as a specialized freelancer",
@@ -44,7 +58,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     company: "Viha Digital Commerce",
-    role: "HR Executive",
+    role: "Junior HR Representative",
     period: "May 2022 - May 2023",
     location: "Ahmedabad, Gujarat, India",
     achievements: [
